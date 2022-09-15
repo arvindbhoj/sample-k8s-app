@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: localmainpage
 data:
-  ship.html: |
+  gems.html: |
     <html>
         <body>
             <h1>!!!The new Gems is here!!!</h1>
