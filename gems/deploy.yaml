@@ -24,7 +24,17 @@ spec:
         - mountPath: /usr/share/nginx/html/index.html
           name: globalmainpage
           subPath: index.html
+        - mountPath: /usr/share/nginx/html/gems.html
+          name: localmainpage
+          subPath: gems.html
+      volumes:
+      - name: localmainpage
+        configMap:
+          name: localmainpage
       volumes:
       - name: globalmainpage
         configMap:
           name: globalmainpage
+      - name: localmainpage
+        configMap:
+          name: localmainpage
