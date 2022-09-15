@@ -7,9 +7,9 @@ data:
   index.html: |
     <html>
         <body>
+            <h1>!!Welcome to Broadridge Financial Service!!</h1>
             <h2>Gems</h2>
             <p><a href="gems.html">Please click here for details</a></p>
-            <h1>!!Welcome to Broadridge Financial Service!!</h1>
             <img src="https://www.officelovin.com/wp-content/uploads/2020/05/broadridge-nyc-office-3.jpg">
         </body>
     </html>
