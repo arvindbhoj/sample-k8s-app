@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: globalmainpage
+  namespace: default
+data:
+  index.html: |
+    <html>
+        <body>
+            <h1>!!Welcome to Broadridge Financial Services!!</h1>
+            <img src="https://www.officelovin.com/wp-content/uploads/2020/05/broadridge-nyc-office-3.jpg">
+            <h2>Gems</h2>
+            <p><a href="gems.html">Please click here for details</a></p>
+        </body>
+    </html>

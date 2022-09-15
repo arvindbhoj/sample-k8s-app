@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    configmap.reloader.stakater.com/reload: "globalmainpage,localmainpage"
+  labels:
+    app: welcomeglobal
+  name: welcomeglobal
+  namespace: default
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: welcomeglobal
+  template:
+    metadata:
+      labels:
+        app: welcomeglobal
+    spec:
+      containers:
+      - image: library/nginx:1.17-alpine
+        name: nginx
+        volumeMounts:
+        - mountPath: /usr/share/nginx/html/index.html
+          name: globalmainpage
+          subPath: index.html
+      volumes:
+      - name: globalmainpage
+        configMap:
+          name: globalmainpage

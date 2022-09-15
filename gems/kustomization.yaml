@@ -1,0 +1,6 @@
+resources:
+- deploy.yaml
+- service.yaml
+- ingress.yaml
+- middleware.yaml
+- configmap.yaml
