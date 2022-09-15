@@ -31,10 +31,6 @@ spec:
       - name: localmainpage
         configMap:
           name: localmainpage
-      volumes:
       - name: globalmainpage
         configMap:
           name: globalmainpage
-      - name: localmainpage
-        configMap:
-          name: localmainpage
