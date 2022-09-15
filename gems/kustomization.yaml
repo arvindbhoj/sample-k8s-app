@@ -4,3 +4,4 @@ resources:
 - ingress.yaml
 - middleware.yaml
 - configmap.yaml
+- configmap2.yaml
