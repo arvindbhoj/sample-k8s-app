@@ -1,6 +1,6 @@
 # sample-k8s-app
 This is a demo to show how Flux CD can be used to deploy different flavors of apps to different k8s environments.
->This assumes that you already have Flux CD deployed and configured.
+>This assumes that you already have Flux CD deployed and configured. Also it uses Traefik 2.x for ingress.
 >A DKP Enterprise cluster already has this setup and ready to go
  
 Simply follow the steps given below to deploy these to your cluster
@@ -139,3 +139,8 @@ spec:
    namespace: ${NAMESPACE}
 EOF
 ```
+
+Now open a browser and view the deployed application at the following endpoint for both the clusters:
+https://<cluster-url>/welcomeglobal/ 
+
+Now to demo changes, Make changes to the configmap at the global level or the ship level and commit and see it automaically reflect in the application
