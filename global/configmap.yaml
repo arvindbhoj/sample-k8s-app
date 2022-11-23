@@ -7,7 +7,7 @@ data:
   index.html: |
     <html>
         <body>
-            <h1>!!!Welcome to Royal Caribbean Cruise Liner!!!</h1>
+            <h1>!!Welcome to Royal Caribbean Cruise Liner!!</h1>
             <img src="https://media4.giphy.com/media/UuYwihkHeDptzuEkrG/giphy.gif?cid=ecf05e47kx1ct8vf0c6nmlw9ybxsz0j0txahwb80xx722nwy&rid=giphy.gif&ct=g">
             <h2>Ship Specific Info</h2>
             <p><a href="ship.html">Please click here for details</a></p>
